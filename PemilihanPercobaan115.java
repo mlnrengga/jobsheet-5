@@ -3,13 +3,13 @@ public class PemilihanPercobaan115 {
 public static void main(String[] args) {
 
 Scanner input15 = new Scanner(System.in);
+int angka;
 System.out.print("Masukkan Angka:   ");
-int angka = input15.nextInt();
+angka = input15.nextInt();
 
-if (angka % 2 == 0)
-    System.out.println("Angka "+angka+" Bilangan Genap");
-else
-    System.out.println("Angka "+angka+"Bilangan Ganjil");
+String hasil = (angka % 2 ==0) ? "Bilangan Genap" : "Bilangan Ganjil";
+System.out.println(hasil);
+
 input15.close();
 }
 }
